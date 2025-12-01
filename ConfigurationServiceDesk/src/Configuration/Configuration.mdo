@@ -38,4 +38,10 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <catalogs>Catalog.ГруппыИсполнителей</catalogs>
+  <catalogs>Catalog.Исполнители</catalogs>
+  <catalogs>Catalog.ПользователиИТ</catalogs>
+  <catalogs>Catalog.Приоритеты</catalogs>
+  <catalogs>Catalog.СервисыИТ</catalogs>
+  <catalogs>Catalog.СтатусыОбращений</catalogs>
 </mdclass:Configuration>

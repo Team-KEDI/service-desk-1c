@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e8db8081-1fea-4d8b-9222-2268b9a8cf1c">
+  <producedTypes>
+    <objectType typeId="41a39d0e-698a-4b63-b264-9a5141ed868b" valueTypeId="e9b6a90e-d158-496f-be17-44ff98adb4d3"/>
+    <refType typeId="393101a3-8293-471a-921b-ca53681907bd" valueTypeId="8192a50c-64e1-455f-b6f5-f7c6aefdad82"/>
+    <selectionType typeId="0f69d597-54d5-41e6-9af8-766badd100d9" valueTypeId="b80f1735-6939-4019-a405-1aa02e7d381e"/>
+    <listType typeId="1bd9e5f4-bdb2-4fa3-a8cf-263086982c7c" valueTypeId="f00d1c9b-605d-420e-84a8-cdeaedab8705"/>
+    <managerType typeId="7b59d779-9d34-4458-9be4-ec764e57a17a" valueTypeId="20da3c30-0290-4171-8180-c916464fbb0b"/>
+  </producedTypes>
+  <name>Приоритеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приоритеты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Приоритеты.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Приоритеты.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="da489a3c-021c-4e0c-8bc8-f5c1c82df7b6">
+    <name>ПорядокСортировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок сортировки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e7b016df-f0c1-4d01-b942-36157c0e9fc3">
+    <name>ЦветДляИнтерфейса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет для интерфейса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

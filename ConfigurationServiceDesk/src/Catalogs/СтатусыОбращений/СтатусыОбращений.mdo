@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39f138ea-8a71-4d92-8fd5-7d6e38245b16">
+  <producedTypes>
+    <objectType typeId="5859a536-f277-4120-bf56-e02c005b8b15" valueTypeId="a244e5f7-c372-44c5-9f49-7e97dc44f8ca"/>
+    <refType typeId="193b1453-5bd7-4a19-b451-f15bb63ea40e" valueTypeId="979b108a-e308-4e95-bf35-29fcf7d798da"/>
+    <selectionType typeId="b8de836c-4713-48a7-b7e6-fe99b714e6cd" valueTypeId="27d86d30-da62-4007-a542-c913cc449903"/>
+    <listType typeId="56d4dcad-39db-4449-be2c-8565a8f76bd9" valueTypeId="1b4ac337-5aac-47fd-a9f7-e8953df5bcbd"/>
+    <managerType typeId="38ef50ec-09ca-491d-8018-9a2d387fe170" valueTypeId="1ef8e05f-d9df-46e3-8856-4f20cd1141f3"/>
+  </producedTypes>
+  <name>СтатусыОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы обращений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СтатусыОбращений.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.СтатусыОбращений.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="4da9b52d-6857-4556-8afc-aa76c84f0395">
+    <name>ПорядокСортировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок сортировки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eaa30b8e-1dd9-4eb4-b3f3-04e6404df500">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="617ba5dd-eac3-4636-ba18-8561bbe2c713">
+    <name>ЦветДляИнтерфейса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет для интерфейса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

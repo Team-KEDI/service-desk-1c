@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa3bee6c-a6e3-435f-91b3-945f448cfc04">
+  <producedTypes>
+    <objectType typeId="f361dbe5-9add-4125-a4ce-d60e47282959" valueTypeId="fe13a282-1237-43e5-8710-0da5c016dcfa"/>
+    <refType typeId="267471a1-3eca-40e9-a5ac-5783e7a7c253" valueTypeId="7fc877b6-b03a-4ed1-ae23-946c9531165f"/>
+    <selectionType typeId="b721569d-b5f9-42f2-9d05-e898efe2ec46" valueTypeId="4e456a50-b3f3-45cb-ae83-ee03abd20d02"/>
+    <listType typeId="2394b76c-8a64-4a17-a684-a16874097ee6" valueTypeId="1cc496dc-9da7-4c6c-b681-2040d41f3c52"/>
+    <managerType typeId="92d5f885-e6fc-4023-a661-78ba3bfd05dd" valueTypeId="a4eb8fd1-9370-4f02-88cc-6e88428b9c69"/>
+  </producedTypes>
+  <name>СервисыИТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сервисы ИТ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СервисыИТ.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.СервисыИТ.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="a25557d2-8926-4080-a8a9-ec96c02a2e92">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f4281514-36d6-47ad-bb18-e5666169e2ea">
+    <name>Активен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

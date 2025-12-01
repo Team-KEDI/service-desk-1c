@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea4ad644-2c56-4244-8e3f-bddb0f0d4101">
+  <producedTypes>
+    <objectType typeId="7a85ea5f-7d2c-492d-b3ff-a564dda4ed06" valueTypeId="ebe7ee1b-d4ae-48b3-ae93-f1e39820cf27"/>
+    <refType typeId="bb1255aa-1542-4b9e-8630-1132311fbec9" valueTypeId="ca6ee309-6e53-4b83-97a2-29d26da98a48"/>
+    <selectionType typeId="508033f6-bf5e-4061-8448-bc45ba13e269" valueTypeId="dba2753c-6075-42ad-bf47-6905ebe4be22"/>
+    <listType typeId="e86e7782-4300-493a-8ebd-6f72be4155e3" valueTypeId="9336cadc-b72c-47a2-a057-a5c9bae829fa"/>
+    <managerType typeId="25b3ee57-4e20-4081-9788-13c64f7c5247" valueTypeId="feacadc6-a823-402a-a032-e414bf15f212"/>
+  </producedTypes>
+  <name>ГруппыИсполнителей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Группы исполнителей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ГруппыИсполнителей.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ГруппыИсполнителей.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="514a6315-13ad-4136-a62c-91bee280d2d2">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2acaba28-31b2-41c4-8186-525efc79796a">
+    <name>EmailГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Email группы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0b0b98ff-ca39-424c-8503-1f21e69095a2">
+    <name>Руководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Исполнители</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
