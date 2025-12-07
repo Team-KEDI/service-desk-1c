@@ -40,8 +40,10 @@
   </languages>
   <catalogs>Catalog.ГруппыИсполнителей</catalogs>
   <catalogs>Catalog.Исполнители</catalogs>
+  <catalogs>Catalog.КатегорииОбращений</catalogs>
   <catalogs>Catalog.ПользователиИТ</catalogs>
   <catalogs>Catalog.Приоритеты</catalogs>
   <catalogs>Catalog.СервисыИТ</catalogs>
   <catalogs>Catalog.СтатусыОбращений</catalogs>
+  <documents>Document.ОбращениеПользователя</documents>
 </mdclass:Configuration>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6cfaaf2d-9525-420e-babc-d37952f83292">
+  <producedTypes>
+    <objectType typeId="8f71edb1-0566-4e45-b40f-fe4e66eb3c67" valueTypeId="617451a3-f6cd-4608-8753-07d2ec2a75db"/>
+    <refType typeId="ed868b22-29c9-445b-b29f-81d42a264dea" valueTypeId="e30ce01f-e88f-44e1-9539-60012b653061"/>
+    <selectionType typeId="250dafe4-f608-4e9c-b57f-375b11cd1bc1" valueTypeId="9193da3a-f240-4fd3-a67f-b413f1bf7e41"/>
+    <listType typeId="1ad8ab11-2f60-4c65-ae31-02b59a021fb6" valueTypeId="4db70682-cade-4dd4-992b-dda37c17dc95"/>
+    <managerType typeId="e8c3e530-8342-4bbe-9818-b5b205c3b577" valueTypeId="f92d071b-6c70-46d6-a010-64c982a77100"/>
+  </producedTypes>
+  <name>КатегорииОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории обращений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КатегорииОбращений.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.КатегорииОбращений.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>
