@@ -23,6 +23,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ОбращениеПользователя.Form.ФормаОбращенияПользователя</defaultObjectForm>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="f11551dc-d77e-42ac-96fb-e6b3b5e9e216">
@@ -234,6 +235,15 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="1bd4c261-19af-4010-8d9a-34370bf96148">
+    <name>ФормаОбращенияПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обращения пользователя</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="a657c39d-e944-40da-a7ae-eba05dbb048d">
     <producedTypes>
       <objectType typeId="15fd10c9-154b-48d6-8537-373084b74064" valueTypeId="900635eb-5f46-4393-b20a-c223d2187d17"/>
