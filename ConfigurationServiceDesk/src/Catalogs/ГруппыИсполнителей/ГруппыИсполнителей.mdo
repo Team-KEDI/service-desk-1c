@@ -69,7 +69,7 @@
       <value>Руководитель</value>
     </synonym>
     <type>
-      <types>CatalogRef.Исполнители</types>
+      <types>CatalogRef.ПользователиИТ</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
