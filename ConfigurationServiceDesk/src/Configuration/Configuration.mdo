@@ -38,6 +38,10 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <roles>Role.Администратор</roles>
+  <roles>Role.Исполнитель</roles>
+  <roles>Role.Наблюдатель</roles>
+  <roles>Role.Пользователь</roles>
   <catalogs>Catalog.ГруппыИсполнителей</catalogs>
   <catalogs>Catalog.Исполнители</catalogs>
   <catalogs>Catalog.КатегорииОбращений</catalogs>
