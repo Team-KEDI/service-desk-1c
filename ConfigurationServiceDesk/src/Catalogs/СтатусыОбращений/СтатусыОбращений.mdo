@@ -28,6 +28,71 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="73b7fb95-b9e0-4d42-a60b-29ba99cd2d83">
+      <name>Новое</name>
+      <description>Новое</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="3084ff1c-4fff-46cd-a234-f4e97bb755e5">
+      <name>Назначено</name>
+      <description>Назначено</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="072aa31d-02e6-4867-ad35-4ca32e4f5f10">
+      <name>ВРаботе</name>
+      <description>В работе</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="839c35fd-d8e7-40de-8965-76d646e84e48">
+      <name>ОжиданиеОтвета</name>
+      <description>Ожидание ответа</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="df46239e-b331-48a2-9b6f-899eb4c008d4">
+      <name>Решено</name>
+      <description>Решено</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="b4228754-88ee-468b-bf01-876968f3c5d7">
+      <name>Закрыто</name>
+      <description>Закрыто</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="eae0adfa-a356-4505-93aa-2a95bc6a98fa">
+      <name>Переоткрыто</name>
+      <description>Переоткрыто</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="129f3260-510b-485b-82f4-e37f3815507f">
+      <name>Отклонено</name>
+      <description>Отклонено</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="a19327e3-b19e-4234-8ff2-f0a49e4d708c">
+      <name>НаПодтверждении</name>
+      <description>На подтверждении</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+  </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <attributes uuid="4da9b52d-6857-4556-8afc-aa76c84f0395">
