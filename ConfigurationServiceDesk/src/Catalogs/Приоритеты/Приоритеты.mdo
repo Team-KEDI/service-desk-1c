@@ -28,6 +28,36 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="3ad7ff73-af81-464d-b4cc-57a8e695b3d5">
+      <name>P1</name>
+      <description>P1</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="f63fe528-4031-4ea1-9fab-3c8aa2896fab">
+      <name>P2</name>
+      <description>P2</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="c0348df5-41d7-4faa-bcb9-9d4b221ca6be">
+      <name>P3</name>
+      <description>P3</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="ff5eb686-b516-452a-9dd8-b67c2b5e7d7c">
+      <name>P4</name>
+      <description>P4</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+  </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <attributes uuid="da489a3c-021c-4e0c-8bc8-f5c1c82df7b6">
