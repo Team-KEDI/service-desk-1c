@@ -442,7 +442,6 @@
       <items xsi:type="form:FormField">
         <name>СрокРеакции</name>
         <id>40</id>
-        <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
@@ -482,7 +481,6 @@
       <items xsi:type="form:FormField">
         <name>СрокРешения</name>
         <id>43</id>
-        <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
@@ -522,7 +520,6 @@
       <items xsi:type="form:FormField">
         <name>ДатаПринятияВРаботу</name>
         <id>46</id>
-        <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
@@ -562,7 +559,6 @@
       <items xsi:type="form:FormField">
         <name>ДатаЗакрытия</name>
         <id>49</id>
-        <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
