@@ -50,4 +50,7 @@
   <catalogs>Catalog.СервисыИТ</catalogs>
   <catalogs>Catalog.СтатусыОбращений</catalogs>
   <documents>Document.ОбращениеПользователя</documents>
+  <informationRegisters>InformationRegister.ИсторияИзмененийОбращений</informationRegisters>
+  <informationRegisters>InformationRegister.НастройкиSLA</informationRegisters>
+  <informationRegisters>InformationRegister.РабочийЖурнал</informationRegisters>
 </mdclass:Configuration>

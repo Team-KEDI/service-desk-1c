@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b3023aa-72b3-4a3e-9e83-b0e39ebc2ff4">
+  <producedTypes>
+    <selectionType typeId="289f2999-c332-4450-8491-64438c05cc1a" valueTypeId="a815e061-80da-4c89-be39-14c4e08a0cc2"/>
+    <listType typeId="11bcf911-eded-4967-abdd-2da4ef6f5a70" valueTypeId="d0ff469d-3387-4fb8-b4c6-8e0969098552"/>
+    <managerType typeId="f939628a-ed1d-4011-8182-a9e4463607ac" valueTypeId="55704986-8fd2-493f-8b67-ec6a78e7a93b"/>
+    <recordSetType typeId="215320ce-9f7f-4786-9667-f33c267c42f6" valueTypeId="5bbd190a-59ea-41c8-aaf9-e775c063983a"/>
+    <recordKeyType typeId="8fda77f7-95d9-4bde-ab26-a06237b81b87" valueTypeId="39fc0161-6abe-4ecc-a875-609046facad8"/>
+    <recordType typeId="1f3b16b1-b10c-452f-9863-d0c04a78291b" valueTypeId="b666ecdb-cd1a-4187-8212-fa9baf51b81f"/>
+    <recordManagerType typeId="9c298edd-d76c-4f9f-8237-4c12fabfcfe1" valueTypeId="4424631a-f52b-447e-9630-42cecfdc039a"/>
+  </producedTypes>
+  <name>НастройкиSLA</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки SLA</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f8591c30-0741-460a-9b3a-694dd01d116e">
+    <name>ВремяРеакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время реакции</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="db046bf0-0370-44c7-be60-199bfe363325">
+    <name>ВремяРешения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время решения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b9555b20-ec93-4063-831e-28769eeb1b6b">
+    <name>УчитыватьНерабочееВремя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать нерабочее время</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1b0a2b70-076d-41f9-b3e4-69db433ed375">
+    <name>Сервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СервисыИТ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ec71ed43-a8f7-4711-a6ee-ae234aa655e9">
+    <name>Приоритет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Приоритеты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

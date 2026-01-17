@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9264f7b9-d3d3-4b14-b117-651ca75824c4">
+  <producedTypes>
+    <selectionType typeId="90e53369-67e1-40bf-91b7-e7ec82c1cd1d" valueTypeId="1fdf2fe4-6164-4740-a416-fedf1444c19a"/>
+    <listType typeId="9527cde4-08a0-4b5b-9009-64aa9dc73989" valueTypeId="46f3ff29-3163-46cd-8acb-5780d1671b66"/>
+    <managerType typeId="5b73aedd-ecde-445a-b654-fcefcf664287" valueTypeId="2ac0b7f0-582b-48a6-9b45-ad3360f90d30"/>
+    <recordSetType typeId="9f1e62a5-7744-4ffa-b25e-1cf45daf06fe" valueTypeId="c89863ec-2a3d-4ada-81ae-c7f0fdde3225"/>
+    <recordKeyType typeId="6d947a44-82a6-4e43-9ca9-bf9493c47590" valueTypeId="f2c3c3b8-31d3-479e-b104-41c1e13dd9e1"/>
+    <recordType typeId="5c449c42-413a-4cae-b463-7253f7b63465" valueTypeId="8bc1ea6a-55de-4b49-9cfb-b662ea9cc020"/>
+    <recordManagerType typeId="3c58a28e-17bf-409e-b360-3d5049d72aea" valueTypeId="4619b717-9760-4ec6-921d-4b155d381c9b"/>
+  </producedTypes>
+  <name>РабочийЖурнал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рабочий журнал</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="bcbad1c8-e598-43a9-a476-75b13484289c">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Исполнители</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="46b8695a-d394-4178-b08a-408af504c3ff">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c71a3561-d87b-4d89-9446-b01236d94a17">
+    <name>Текст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2f1f4c3a-3e64-4ba9-9857-9785ef1c01b3">
+    <name>Важно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Важно</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fc5ebf0d-4354-4370-9ee7-df16e2c60f11">
+    <name>Обращение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обращение</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОбращениеПользователя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7359640b-e540-4cea-9c73-0efb701b95d2">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
