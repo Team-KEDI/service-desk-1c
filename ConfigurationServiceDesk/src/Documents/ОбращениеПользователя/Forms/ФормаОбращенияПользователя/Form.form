@@ -1730,11 +1730,6 @@
           <extendedTooltip>
             <name>РабочийЖурналСписокОбращениеРасширеннаяПодсказка</name>
             <id>216</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1745,11 +1740,6 @@
           <contextMenu>
             <name>РабочийЖурналСписокОбращениеКонтекстноеМеню</name>
             <id>215</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
@@ -1780,11 +1770,6 @@
           <extendedTooltip>
             <name>РабочийЖурналСписокНомерРасширеннаяПодсказка</name>
             <id>219</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1795,11 +1780,6 @@
           <contextMenu>
             <name>РабочийЖурналСписокНомерКонтекстноеМеню</name>
             <id>218</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
@@ -1830,11 +1810,6 @@
           <extendedTooltip>
             <name>РабочийЖурналСписокИсполнительРасширеннаяПодсказка</name>
             <id>222</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1845,11 +1820,6 @@
           <contextMenu>
             <name>РабочийЖурналСписокИсполнительКонтекстноеМеню</name>
             <id>221</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
@@ -1880,11 +1850,6 @@
           <extendedTooltip>
             <name>РабочийЖурналСписокВажноРасширеннаяПодсказка</name>
             <id>225</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1895,11 +1860,6 @@
           <contextMenu>
             <name>РабочийЖурналСписокВажноКонтекстноеМеню</name>
             <id>224</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>CheckBoxField</type>
@@ -1912,30 +1872,15 @@
         <autoCommandBar>
           <name>РабочийЖурналСписокКоманднаяПанель</name>
           <id>202</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <horizontalAlign>Left</horizontalAlign>
           <autoFill>true</autoFill>
         </autoCommandBar>
         <searchStringAddition>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <name>РабочийЖурналСписокСтрокаПоиска</name>
           <id>205</id>
           <extendedTooltip>
             <name>РабочийЖурналСписокСтрокаПоискаРасширеннаяПодсказка</name>
             <id>207</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1946,11 +1891,6 @@
           <contextMenu>
             <name>РабочийЖурналСписокСтрокаПоискаКонтекстноеМеню</name>
             <id>206</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <source>РабочийЖурналСписок</source>
@@ -1959,21 +1899,11 @@
           </extInfo>
         </searchStringAddition>
         <viewStatusAddition>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <name>РабочийЖурналСписокСостояниеПросмотра</name>
           <id>211</id>
           <extendedTooltip>
             <name>РабочийЖурналСписокСостояниеПросмотраРасширеннаяПодсказка</name>
             <id>213</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -1984,11 +1914,6 @@
           <contextMenu>
             <name>РабочийЖурналСписокСостояниеПросмотраКонтекстноеМеню</name>
             <id>212</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
@@ -1998,21 +1923,11 @@
           </extInfo>
         </viewStatusAddition>
         <searchControlAddition>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <name>РабочийЖурналСписокУправлениеПоиском</name>
           <id>208</id>
           <extendedTooltip>
             <name>РабочийЖурналСписокУправлениеПоискомРасширеннаяПодсказка</name>
             <id>210</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -2023,11 +1938,6 @@
           <contextMenu>
             <name>РабочийЖурналСписокУправлениеПоискомКонтекстноеМеню</name>
             <id>209</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
@@ -2039,11 +1949,6 @@
         <extendedTooltip>
           <name>РабочийЖурналСписокРасширеннаяПодсказка</name>
           <id>204</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -2054,11 +1959,6 @@
         <contextMenu>
           <name>РабочийЖурналСписокКонтекстноеМеню</name>
           <id>203</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <autoFill>true</autoFill>
         </contextMenu>
         <representation>HierarchicalList</representation>
@@ -2103,11 +2003,6 @@
       <extendedTooltip>
         <name>ГруппаРабочийЖурналРасширеннаяПодсказка</name>
         <id>200</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -2168,6 +2063,31 @@
         </extInfo>
       </extendedTooltip>
       <commandName>Form.Command.ВРаботу</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ФормаРешено</name>
+      <id>145</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаРешеноРасширеннаяПодсказка</name>
+        <id>146</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Решено</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -2248,6 +2168,23 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>ВРаботу</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Решено</name>
+    <title>
+      <key>ru</key>
+      <value>Решено</value>
+    </title>
+    <id>2</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Решено</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

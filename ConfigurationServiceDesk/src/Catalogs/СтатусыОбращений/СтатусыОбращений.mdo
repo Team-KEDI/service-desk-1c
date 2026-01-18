@@ -85,13 +85,6 @@
         <value>000000008</value>
       </code>
     </items>
-    <items id="a19327e3-b19e-4234-8ff2-f0a49e4d708c">
-      <name>НаПодтверждении</name>
-      <description>На подтверждении</description>
-      <code xsi:type="core:StringValue">
-        <value>000000009</value>
-      </code>
-    </items>
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
