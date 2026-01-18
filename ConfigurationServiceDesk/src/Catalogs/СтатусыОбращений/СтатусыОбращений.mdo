@@ -73,7 +73,7 @@
     </items>
     <items id="eae0adfa-a356-4505-93aa-2a95bc6a98fa">
       <name>ВозвратВРаботу</name>
-      <description>Возврат ВРаботу</description>
+      <description>Возврат в работу</description>
       <code xsi:type="core:StringValue">
         <value>000000007</value>
       </code>
