@@ -10,7 +10,17 @@
     <value>Отчет</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.Отчет.Form.ФормаОтчета</defaultForm>
   <mainDataCompositionSchema>Report.Отчет.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="8bdb0b3b-0fde-4601-bed7-bff31194549d">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="ad9bd432-9083-4a27-912c-f2b75b27f3b0">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>
