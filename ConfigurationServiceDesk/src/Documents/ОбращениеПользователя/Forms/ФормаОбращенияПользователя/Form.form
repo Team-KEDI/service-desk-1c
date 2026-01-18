@@ -2051,6 +2051,12 @@
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
+        <for>
+          <role>Role.Наблюдатель</role>
+        </for>
+        <for>
+          <role>Role.Пользователь</role>
+        </for>
       </userVisible>
       <extendedTooltip>
         <name>ФормаВРаботуРасширеннаяПодсказка</name>
@@ -2076,6 +2082,12 @@
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
+        <for>
+          <role>Role.Наблюдатель</role>
+        </for>
+        <for>
+          <role>Role.Пользователь</role>
+        </for>
       </userVisible>
       <extendedTooltip>
         <name>ФормаРешеноРасширеннаяПодсказка</name>
@@ -2101,6 +2113,12 @@
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
+        <for>
+          <role>Role.Исполнитель</role>
+        </for>
+        <for>
+          <role>Role.Наблюдатель</role>
+        </for>
       </userVisible>
       <extendedTooltip>
         <name>ФормаПринятьРешениеРасширеннаяПодсказка</name>
@@ -2126,6 +2144,12 @@
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
+        <for>
+          <role>Role.Исполнитель</role>
+        </for>
+        <for>
+          <role>Role.Наблюдатель</role>
+        </for>
       </userVisible>
       <extendedTooltip>
         <name>ФормаОтклонитьРешениеРасширеннаяПодсказка</name>
@@ -2278,6 +2302,10 @@
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
+    <handlers>
+      <event>OnReadAtServer</event>
+      <name>ПриЧтенииНаСервере</name>
+    </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
 </form:Form>

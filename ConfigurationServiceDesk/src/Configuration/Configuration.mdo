@@ -43,6 +43,8 @@
   <roles>Role.Наблюдатель</roles>
   <roles>Role.Пользователь</roles>
   <commonModules>CommonModule.СерверСервисДеск</commonModules>
+  <commonModules>CommonModule.ФоновыеЗаданияСервисДеск</commonModules>
+  <scheduledJobs>ScheduledJob.ОбновлениеСтатусовSLA</scheduledJobs>
   <catalogs>Catalog.ГруппыИсполнителей</catalogs>
   <catalogs>Catalog.Исполнители</catalogs>
   <catalogs>Catalog.КатегорииОбращений</catalogs>
@@ -51,6 +53,7 @@
   <catalogs>Catalog.СервисыИТ</catalogs>
   <catalogs>Catalog.СтатусыОбращений</catalogs>
   <documents>Document.ОбращениеПользователя</documents>
+  <reports>Report.Отчет</reports>
   <informationRegisters>InformationRegister.ИсторияИзмененийОбращений</informationRegisters>
   <informationRegisters>InformationRegister.НастройкиSLA</informationRegisters>
   <informationRegisters>InformationRegister.РабочийЖурнал</informationRegisters>
