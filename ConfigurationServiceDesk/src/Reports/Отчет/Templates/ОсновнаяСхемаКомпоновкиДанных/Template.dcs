@@ -101,37 +101,107 @@ FROM
 WHERE
     Обращение.Дата BETWEEN &amp;НачалоПериода AND &amp;КонецПериода</query>
 	</dataSet>
-	<totalField>
-		<dataPath>Ссылка</dataPath>
-		<expression>Количество(Ссылка)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>Статус</dataPath>
+	<calculatedField>
+		<dataPath>ОткрытыеОбращения</dataPath>
 		<expression>Сумма(ВЫБОР 
     КОГДА Статус В (ЗНАЧЕНИЕ(Справочник.СтатусыОбращений.Новое), ЗНАЧЕНИЕ(Справочник.СтатусыОбращений.ВРаботе), ЗНАЧЕНИЕ(Справочник.СтатусыОбращений.Назначено)) 
     ТОГДА 1 
     ИНАЧЕ 0 
 КОНЕЦ)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Открытые обращения</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоПросроченных</dataPath>
+		<expression>Сумма(ВЫБОР КОГДА Просрочено = Истина ТОГДА 1 ИНАЧЕ 0 КОНЕЦ)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество просроченных</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоРешённых</dataPath>
+		<expression>Сумма(ВЫБОР КОГДА Статус = ЗНАЧЕНИЕ(Справочник.СтатусыОбращений.Решено) ТОГДА 1 ИНАЧЕ 0 КОНЕЦ)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество решённых</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоОбращений</dataPath>
+		<expression>Количество(Ссылка)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество обращений</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоРешённыхНеПросроченных</dataPath>
+		<expression>Сумма(ВЫБОР КОГДА Статус = ЗНАЧЕНИЕ(Справочник.СтатусыОбращений.Решено) И НЕ Просрочено  ТОГДА 1 ИНАЧЕ 0 КОНЕЦ)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество решённых не просроченных</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПроцентНеПросроченных</dataPath>
+		<expression>Сумма(ВЫБОР КОГДА Статус = ЗНАЧЕНИЕ(Справочник.СтатусыОбращений.Решено) И НЕ Просрочено  ТОГДА 1 ИНАЧЕ 0 КОНЕЦ)/Сумма(ВЫБОР КОГДА Статус = ЗНАЧЕНИЕ(Справочник.СтатусыОбращений.Решено) И НЕ Просрочено  ТОГДА 1 ИНАЧЕ 0 КОНЕЦ)*100</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Процент не просроченных</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоНовых</dataPath>
+		<expression>Сумма(ВЫБОР КОГДА Статус = ЗНАЧЕНИЕ(Справочник.СтатусыОбращений.Новое) ТОГДА 1 ИНАЧЕ 0 КОНЕЦ)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество новых</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>Ссылка</dataPath>
+		<expression>Количество(Ссылка)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>Просрочено</dataPath>
-		<expression>Сумма(ВЫБОР КОГДА Просрочено ТОГДА 1 ИНАЧЕ 0 КОНЕЦ)</expression>
+		<dataPath>ОткрытыеОбращения</dataPath>
+		<expression>ОткрытыеОбращения</expression>
 	</totalField>
 	<totalField>
-		<dataPath>Статус</dataPath>
-		<expression>Среднее(
-    ВЫБОР 
-        КОГДА Статус = ЗНАЧЕНИЕ(Справочник.СтатусыОбращений.Решено) 
-        ТОГДА РАЗНОСТЬДАТ(ДатаСоздания, &amp;ТекущаяДата, "МИНУТА") 
-        ИНАЧЕ NULL 
-    КОНЕЦ
-)</expression>
+		<dataPath>КоличествоПросроченных</dataPath>
+		<expression>КоличествоПросроченных</expression>
 	</totalField>
 	<totalField>
-		<dataPath>ДатаСоздания</dataPath>
-		<expression>Среднее(
-    РАЗНОСТЬДАТ(ДатаЗакрытия, ДатаСоздания, "ЧАС") 
-)</expression>
+		<dataPath>КоличествоРешённых</dataPath>
+		<expression>КоличествоРешённых</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентНеПросроченных</dataPath>
+		<expression>ПроцентНеПросроченных</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоОбращений</dataPath>
+		<expression>КоличествоОбращений</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоНовых</dataPath>
+		<expression>КоличествоНовых</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -147,7 +217,8 @@ WHERE
 				<v8:DateFractions>DateTime</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
-		<useRestriction>true</useRestriction>
+		<useRestriction>false</useRestriction>
+		<expression>ДобавитьКДате(ТекущаяДатаСеанса(), "День", -7)</expression>
 	</parameter>
 	<parameter>
 		<name>КонецПериода</name>
@@ -163,7 +234,8 @@ WHERE
 				<v8:DateFractions>DateTime</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
-		<useRestriction>true</useRestriction>
+		<useRestriction>false</useRestriction>
+		<expression>КонецПериода(ТекущаяДатаСеанса(), "День")</expression>
 	</parameter>
 	<parameter>
 		<name>ТекущаяДата</name>
@@ -184,11 +256,6 @@ WHERE
 		<expression>ТекущаяДатаСеанса()</expression>
 	</parameter>
 	<settingsVariant>
-		<dcsset:name>Основной</dcsset:name>
-		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
-		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
-	</settingsVariant>
-	<settingsVariant>
 		<dcsset:name>Обзор</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
 			<v8:item>
@@ -197,102 +264,18 @@ WHERE
 			</v8:item>
 		</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОткрытыеОбращения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоПросроченных</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
-				<dcsset:groupItems>
-					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Ссылка</dcsset:field>
-						<dcsset:groupType>Items</dcsset:groupType>
-						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Статус</dcsset:field>
-						<dcsset:groupType>Items</dcsset:groupType>
-						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Просрочено</dcsset:field>
-						<dcsset:groupType>Items</dcsset:groupType>
-						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>ДатаСоздания</dcsset:field>
-						<dcsset:groupType>Items</dcsset:groupType>
-						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-					</dcsset:item>
-				</dcsset:groupItems>
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 				</dcsset:order>
-				<dcsset:selection>
-					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-				</dcsset:selection>
-			</dcsset:item>
-			<dcsset:item xsi:type="dcsset:StructureItemGroup">
-				<dcsset:groupItems>
-					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Исполнитель</dcsset:field>
-						<dcsset:groupType>Items</dcsset:groupType>
-						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Ссылка</dcsset:field>
-						<dcsset:groupType>Items</dcsset:groupType>
-						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Просрочено</dcsset:field>
-						<dcsset:groupType>Items</dcsset:groupType>
-						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>ДатаСоздания</dcsset:field>
-						<dcsset:groupType>Items</dcsset:groupType>
-						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-					</dcsset:item>
-				</dcsset:groupItems>
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-				</dcsset:order>
-				<dcsset:selection>
-					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-				</dcsset:selection>
-			</dcsset:item>
-			<dcsset:item xsi:type="dcsset:StructureItemChart">
-				<dcsset:point>
-					<dcsset:groupItems>
-						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>ДатаСоздания</dcsset:field>
-							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-						</dcsset:item>
-					</dcsset:groupItems>
-					<dcsset:order>
-						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-					</dcsset:order>
-					<dcsset:selection>
-						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-					</dcsset:selection>
-				</dcsset:point>
-				<dcsset:series>
-					<dcsset:groupItems>
-						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Ссылка</dcsset:field>
-							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Просрочено</dcsset:field>
-							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-						</dcsset:item>
-					</dcsset:groupItems>
-					<dcsset:order>
-						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-					</dcsset:order>
-					<dcsset:selection>
-						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-					</dcsset:selection>
-				</dcsset:series>
 				<dcsset:selection>
 					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 				</dcsset:selection>
@@ -307,7 +290,24 @@ WHERE
 				<v8:content>По исполнителям</v8:content>
 			</v8:item>
 		</dcsset:presentation>
-		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоОбращений</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроцентНеПросроченных</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
 	</settingsVariant>
 	<settingsVariant>
 		<dcsset:name>Тренды</dcsset:name>
@@ -317,6 +317,38 @@ WHERE
 				<v8:content>Тренды</v8:content>
 			</v8:item>
 		</dcsset:presentation>
-		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоПросроченных</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоРешённых</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоНовых</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemChart">
+				<dcsset:point>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ДатаСоздания</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>Day</dcsset:periodAdditionType>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:point>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
 	</settingsVariant>
 </DataCompositionSchema>
