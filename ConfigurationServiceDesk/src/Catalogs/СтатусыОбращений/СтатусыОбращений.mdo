@@ -72,8 +72,8 @@
       </code>
     </items>
     <items id="eae0adfa-a356-4505-93aa-2a95bc6a98fa">
-      <name>Переоткрыто</name>
-      <description>Переоткрыто</description>
+      <name>ВозвратВРаботу</name>
+      <description>Возврат ВРаботу</description>
       <code xsi:type="core:StringValue">
         <value>000000007</value>
       </code>
@@ -83,6 +83,13 @@
       <description>Отклонено</description>
       <code xsi:type="core:StringValue">
         <value>000000008</value>
+      </code>
+    </items>
+    <items id="62199d9c-9837-4c85-9a3a-1ad8e563c254">
+      <name>НаПодтверждении</name>
+      <description>На подтверждении</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
       </code>
     </items>
   </predefined>
