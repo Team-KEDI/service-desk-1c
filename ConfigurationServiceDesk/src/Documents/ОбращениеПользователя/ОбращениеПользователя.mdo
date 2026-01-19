@@ -16,6 +16,11 @@
   <inputByString>Document.ОбращениеПользователя.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
   <numberType>String</numberType>
@@ -181,10 +186,8 @@
       <value>Срок реакции</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>10</length>
-      </stringQualifiers>
+      <types>Date</types>
+      <dateQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -199,10 +202,8 @@
       <value>Срок решения</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>10</length>
-      </stringQualifiers>
+      <types>Date</types>
+      <dateQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -345,6 +346,36 @@
     <type>
       <types>String</types>
       <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="60719f78-e17f-4203-90ac-d6967788e050">
+    <name>УчитыватьНерабочееВремя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать нерабочее время</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ed8b6ef0-db07-499a-baf3-fc1c03ccf371">
+    <name>Просрочено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просрочено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

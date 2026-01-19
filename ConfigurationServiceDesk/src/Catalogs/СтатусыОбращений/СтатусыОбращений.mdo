@@ -50,25 +50,11 @@
         <value>000000003</value>
       </code>
     </items>
-    <items id="839c35fd-d8e7-40de-8965-76d646e84e48">
-      <name>ОжиданиеОтвета</name>
-      <description>Ожидание ответа</description>
-      <code xsi:type="core:StringValue">
-        <value>000000004</value>
-      </code>
-    </items>
     <items id="df46239e-b331-48a2-9b6f-899eb4c008d4">
       <name>Решено</name>
       <description>Решено</description>
       <code xsi:type="core:StringValue">
         <value>000000005</value>
-      </code>
-    </items>
-    <items id="b4228754-88ee-468b-bf01-876968f3c5d7">
-      <name>Закрыто</name>
-      <description>Закрыто</description>
-      <code xsi:type="core:StringValue">
-        <value>000000006</value>
       </code>
     </items>
     <items id="eae0adfa-a356-4505-93aa-2a95bc6a98fa">

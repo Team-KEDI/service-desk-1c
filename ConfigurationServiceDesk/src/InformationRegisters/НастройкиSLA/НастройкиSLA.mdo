@@ -21,7 +21,7 @@
     <name>ВремяРеакции</name>
     <synonym>
       <key>ru</key>
-      <value>Время реакции</value>
+      <value>Время реакции (минуты)</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -39,7 +39,7 @@
     <name>ВремяРешения</name>
     <synonym>
       <key>ru</key>
-      <value>Время решения</value>
+      <value>Время решения (часы)</value>
     </synonym>
     <type>
       <types>Number</types>

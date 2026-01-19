@@ -42,6 +42,7 @@
   <roles>Role.Исполнитель</roles>
   <roles>Role.Наблюдатель</roles>
   <roles>Role.Пользователь</roles>
+  <commonModules>CommonModule.СерверСервисДеск</commonModules>
   <catalogs>Catalog.ГруппыИсполнителей</catalogs>
   <catalogs>Catalog.Исполнители</catalogs>
   <catalogs>Catalog.КатегорииОбращений</catalogs>

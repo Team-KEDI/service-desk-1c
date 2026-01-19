@@ -15,6 +15,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.НастройкиSLA</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ПользователиИТ</name>
 		<right>
 			<name>Read</name>
@@ -27,6 +38,17 @@
 	</object>
 	<object>
 		<name>Catalog.КатегорииОбращений</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.РабочийЖурнал</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -170,6 +192,17 @@
 		</right>
 		<right>
 			<name>Output</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ИсторияИзмененийОбращений</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
